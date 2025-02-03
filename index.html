@@ -1,144 +1,150 @@
 <!-- НЕ ЗАБЫТЬ ПРО СОЧЕТАНИЕ КЛАВИШ CTRL + S - ВСЕГДА НАЖИМАТЬ ПОСЛЕ КАЖДОГО ИЗМЕНЕНИЯ КОДА -->
  <!-- Постоянно писать в terminal - npm run build-->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="public/output.css" rel="stylesheet">
-</head>
-<body>
-    <!-- xl: - когда экран больше 1024, выполныются условия перечисленные в коде -->
-    <header class="xl:bg-[#32799A] h-[92px] flex justify-between md: bg-blue-200">
-        <!-- flex items-center - выравнивание по центру по вертикали -->
-         <div class="w-[50%] flex items-center"> 
-            <div class="text-white font: 'Roboto' font-style: font-extrabold  text-2xl font-weight: 123 ml-[45px] ">VR-музей</div>
-        </div>
-       
-
-        <div class="flex items-center">
-            <!-- кликабельное меню; в href указываем ссылку куда перейдем по нажатию; в class другие данные(цвет, высота, ширина,...)-->
-            <a href="" class="text-white mx-[23px]">О нас</a>
-            <a href="" class="text-white mx-[23px]">Экспозиции</a>
-            <a href="" class="text-white mx-[23px]">Интерактив</a>
-            <a href="" class="text-white mx-[23px]">Обратная связь</a>
-            <a href="" class="text-white mx-[23px]">Контакты</a>
-        </div>
-
-
-        <div class=" flex items-center text-white mr-[46px]">
-            <!-- div - с тектсом свзать - ЯЗЫК -->
-            <div class="text-white mr-[5px] " >Язык</div>
-            <!-- img - с картинкой -->
-            <img src="/logo.svg" alt="" class="">
-        </div>
-    </header>
-    <img src="Rectangle.svg" class="bg-blue-200 absolute top-[92px] right-[0px] h-[698px] w-[751px]">
-    <main>
-        <div class="w-[1200px] m-auto">
-            <div class="w-[458px]">   
-                <div class="mt-[160px] text-[#FF005A]">Погрузитесь в мир искусства без границ</div> 
-                <div class="font-extrabold text-2xl">В нашем VR-музее каждый день – это праздник открытий</div>
-                <div class="font-weight: 298 mt-[35px]">Погружайтесь в мир искусства вместе с нами! Мы используем современные технологии и интерактивные методы, чтобы сделать путешествие по миру искусства увлекательным и познавательным. А самое главное – мы создаем атмосферу, где безопасность и комфорт всегда стоят на первом месте. Откройте для себя новый способ знакомства с культурой – присоединяйтесь к нам сегодня!</div>
-                <div class="mb-[25px]">А еще мы предлагаем вам выбирать темы для выставок музея! Подробнее в нашем telegram канале - Портал_Искусств</div>
-            </div>
-            <a class ="flex bg-[#1F4C60] items-center justify-center h-[58px] w-[311px] mb-[91px]">
-                <p class="text-white">Перенаправить на канал</p>
-                <img src="Group.svg" alt="" class="mt-[7px] ml-[10px] w-[16,41px] h-[14px]">
-            </a>
-        </div>
-        <div class=" w-[1540px] h-[790px]" style="background-image: url('Group\ 25.svg')">
-            <div class="flex items-center ml-[394px]">
-                <!-- отступить сверху(оглавление) -->
-                <img src="В этом квартале мезозойская эра!.svg">
-            </div>
-            <div class="flex items-center ml-[264px] mt-[145px]">
-            <a class="">
-                <img src="ListItem.svg">
-            </a>
-            <a class="">
-                <img src="mamont.svg">
-            </a>
-            <a class="">
-                <img src="pi.svg">
-            </a>
-            <a class="mt-[35px]">
-                <img src="paporotnic.svg">
-            </a>
-            </div>
-            <a class="flex items-center ml-[635px]">
-                <img src="etc.svg">
-            </a>
-        </div>  
-        <div class="w-[1540px] h-[1114]">
-            <!-- отступить сверху(оглавление) -->
-            <div class="flex items-center ml-[535px]">
-                <img src="Подобрать программу.svg">
-            </div>
-            <div class="">
-            <a class="mx-[244px] bg-blue-200">
-                <img src="Component 2.svg">
-            </a> 
-            <a class="flex items-center ml-[895px] w-[438px]">
-                <img src="Group 1.svg">
-            </a> 
-            </div>
-            <!-- установить на одном горизонтальном уровне Component 1.svg с Group 1.svg-->
-            <a class="flex justify-end ml-[430px] w-[723px]">
-                <img src="Component 1.svg">
-            </a>  
-        </div> 
-        <!-- отступить сверху(оглавление) -->  
-        <div class="w-[1540px] h-[670px]" style="background-image: url('Frame.svg');">
-            <div class="flex items-center ml-[505px]">
-                <img src="Container.svg">
-            </div>
-<!-- форма для заполнения-->
- <!-- max-w-sm ограничивает максимальную ширину формы, mx-auto центрирует её по горизонтали-->
-<form class="max-w-sm mx-auto ml-[505px] mt-[105px]">
-    <div class="mb-5">
-        <!-- placeholder - текст, который будет отображаться в поле до ввода (подсказка для пользователя). -->
-      <input type="name" id="name" class="w-[540px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Ваше имя" required />
-    </div>
-    <div class="mb-5">
-      <input type="email" id="email" class="w-[540px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="e-mail" required />
-    </div>
-    <div class="mb-5">
-        <input type="tel" id="tel" class="w-[540px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Номер телефона" required />
-    </div>
-    <div class="mb-5">
-        <input type="text" id="text" class="w-[540px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Что вас интересует?" required />
-        <div class="text-white">Оставляя заявку, вы соглашаетесь на обработку персональных данных</div>
-    </div>
-    <!-- submit - кнопка для отправки данных формы -->
-    <button type="submit" class="flex items-center ml-[205px] w-[540px] text-white bg-[#1F4C60] hover:bg-[#1F4C60] focus:ring-4 focus:outline-none focus:ring-[#1F4C60] font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-[#1F4C60] dark:hover:bg-[#1F4C60] dark:focus:ring-[#1F4C60]">Оставить заявку</button>
-  </form>
-        </div>   
-        <div class="w-[1540px] m-auto">
-            <div class="w-[960px] h-[376px]"  style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/68/chita/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Чита</a><a href="https://yandex.ru/maps/68/chita/house/ulitsa_generala_belika_42/ZUgFaANmS0IHXEJvYWJxdXRmYAo=/?ll=113.462700%2C52.048543&utm_medium=mapframe&utm_source=maps&z=16.53" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Генерала Белика, 42 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=113.462700%2C52.048543&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxODMzMDAyODMxEmnQoNC-0YHRgdC40Y8sINCX0LDQsdCw0LnQutCw0LvRjNGB0LrQuNC5INC60YDQsNC5LCDQp9C40YLQsCwg0YPQu9C40YbQsCDQk9C10L3QtdGA0LDQu9CwINCR0LXQu9C40LrQsCwgNDIiCg3n7OJCFbUxUEI%2C&z=16.53" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
-        </div>  
-        <div class="">
-            <!-- Поставить по одну линию иконки-->
-            <a class="h-[338px] flex items-center ml-[635px] w-[56px] h-[56px]">
-                <img src="Link+BackgroundColor.svg">
-            </a>
-            <a class="flex items-center ml-[705px] w-[56px]">
-                <img src="2ikonka.svg">
-            </a>
-            <a class="flex items-center ml-[775px] w-[56px]">
-                <img src="3ikonka.svg">
-            </a>
-            <div class="flex items-center">
-                <a href="" class="flex items-center ml-[615px] text-[#000000] mx-[23px]">О компании</a>
-                <a href="" class="text-[#000000] mx-[23px]">Помощь</a>
-                <a href="" class="text-[#000000] mx-[23px]">Контакты</a>
-            </div>
-            <div class="">
-                <a href="" class="flex items-center ml-[705px] text-[#000000] mx-[23px]">© 2025 VR музей</a>
-            </div>
-        </div>
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link href="public/output.css" rel="stylesheet">
+ </head>
+ <body>
+     <!-- xl: - когда экран больше 1024, выполныются условия перечисленные в коде -->
+     <header class="xl:bg-[#32799A] h-[92px] flex justify-between md: bg-blue-200">
+         <!-- flex items-center - выравнивание по центру по вертикали -->
+          <div class="w-[50%] flex items-center"> 
+             <div class="text-white font: 'Roboto' font-style: font-extrabold  text-2xl font-weight: 123 ml-[45px] ">VR-музей</div>
+         </div>
         
-    </main>
-</body>
-</html>
+ 
+         <div class="flex items-center">
+             <!-- кликабельное меню; в href указываем ссылку куда перейдем по нажатию; в class другие данные(цвет, высота, ширина,...)-->
+             <a href="" class="text-white mx-[23px]">О нас</a>
+             <a href="" class="text-white mx-[23px]">Экспозиции</a>
+             <a href="" class="text-white mx-[23px]">Интерактив</a>
+             <a href="" class="text-white mx-[23px]">Обратная связь</a>
+             <a href="" class="text-white mx-[23px]">Контакты</a>
+         </div>
+ 
+ 
+         <div class=" flex items-center text-white mr-[46px]">
+             <!-- div - с тектсом свзать - ЯЗЫК -->
+             <div class="text-white mr-[5px] " >Язык</div>
+             <!-- img - с картинкой -->
+             <img src="/logo.svg" alt="" class="">
+         </div>
+     </header>
+     <img src="Rectangle.svg" class="place-items-end absolute top-[92px] right-[0px] h-[698px] w-[751px]">
+     <main>
+         <div class="w-[1200px] m-auto">
+             <div class="w-[458px]">   
+                 <div class="mt-[160px] text-[#FF005A]">Погрузитесь в мир искусства без границ</div> 
+                 <div class="font-extrabold text-2xl">В нашем VR-музее каждый день – это праздник открытий</div>
+                 <div class="font-weight: 298 mt-[35px]">Погружайтесь в мир искусства вместе с нами! Мы используем современные технологии и интерактивные методы, чтобы сделать путешествие по миру искусства увлекательным и познавательным. А самое главное – мы создаем атмосферу, где безопасность и комфорт всегда стоят на первом месте. Откройте для себя новый способ знакомства с культурой – присоединяйтесь к нам сегодня!</div>
+                 <div class="mb-[25px]">А еще мы предлагаем вам выбирать темы для выставок музея! Подробнее в нашем telegram канале - Портал_Искусств</div>
+             </div>
+             <a class ="flex bg-[#1F4C60] items-center justify-center h-[58px] w-[311px] mb-[91px]">
+                 <p class="text-white">Перенаправить на канал</p>
+                 <img src="Group.svg" alt="" class="mt-[7px] ml-[10px] w-[16,41px] h-[14px]">
+             </a>
+         </div>
+         <div class="h-[790px] w-[100%] bg-no-repeat bg-cover " style="background-image: url('Group\ 25.svg')">
+             <div class="flex items-center ml-[394px]">
+                 <!-- отступить сверху(оглавление) -->
+                 <img src="В этом квартале мезозойская эра!.svg">
+             </div>
+             <div class="m-auto w-[1200px]">
+                 <div class="flex items-center ju m-auto">
+                     <a class="">
+                         <img src="ListItem.svg">
+                     </a>
+                     <a class="">
+                         <img src="mamont.svg">
+                     </a>
+                     <a class="">
+                         <img src="pi.svg">
+                     </a>
+                     <a class="mt-[35px]">
+                         <img src="paporotnic.svg">
+                     </a>
+                     <a class="">
+                         <img src="etc.svg">
+                     </a>
+                 </div>
+ 
+                 </div>
+             </div>
+         <div class="w-[1200px] m-auto">
+             
+             <!-- отступить сверху(оглавление) -->
+             <div class="flex items-center ml-[535px]">
+                 <img src="Подобрать программу.svg">
+             </div>
+             <div class="flex flex-wrap items-center justify-center">
+                 <a class="block">
+                     <img src="Component 2.svg">
+                 </a>
+                 <a class="block mx-[15px]">
+                     <img src="Group 1.svg">
+                 </a> 
+                 <a class="block">
+                     <img src="Component 1.svg">
+                 </a>  
+             </div>
+             <!-- установить на одном горизонтальном уровне Component 1.svg с Group 1.svg-->
+         </div> 
+         <!-- отступить сверху(оглавление) -->  
+         <div class="w-[1540px] h-[670px]" style="background-image: url('Frame.svg');">
+             <div class="flex items-center ml-[505px]">
+                 <img src="Container.svg">
+             </div>
+ <!-- форма для заполнения-->
+  <!-- max-w-sm ограничивает максимальную ширину формы, mx-auto центрирует её по горизонтали-->
+ <form class="max-w-sm mx-auto ml-[505px] mt-[105px]">
+     <div class="mb-5">
+         <!-- placeholder - текст, который будет отображаться в поле до ввода (подсказка для пользователя). -->
+       <input type="name" id="name" class="w-[540px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Ваше имя" required />
+     </div>
+     <div class="mb-5">
+       <input type="email" id="email" class="w-[540px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="e-mail" required />
+     </div>
+     <div class="mb-5">
+         <input type="tel" id="tel" class="w-[540px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Номер телефона" required />
+     </div>
+     <div class="mb-5">
+         <input type="text" id="text" class="w-[540px] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Что вас интересует?" required />
+         <div class="text-white">Оставляя заявку, вы соглашаетесь на обработку персональных данных</div>
+     </div>
+     <!-- submit - кнопка для отправки данных формы -->
+     <button type="submit" class="flex items-center ml-[205px] w-[540px] text-white bg-[#1F4C60] hover:bg-[#1F4C60] focus:ring-4 focus:outline-none focus:ring-[#1F4C60] font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-[#1F4C60] dark:hover:bg-[#1F4C60] dark:focus:ring-[#1F4C60]">Оставить заявку</button>
+   </form>
+         </div>   
+         <div class="w-[1540px] m-auto">
+             <div class="w-[960px] h-[376px]"  style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/68/chita/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Чита</a><a href="https://yandex.ru/maps/68/chita/house/ulitsa_generala_belika_42/ZUgFaANmS0IHXEJvYWJxdXRmYAo=/?ll=113.462700%2C52.048543&utm_medium=mapframe&utm_source=maps&z=16.53" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Генерала Белика, 42 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=113.462700%2C52.048543&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxODMzMDAyODMxEmnQoNC-0YHRgdC40Y8sINCX0LDQsdCw0LnQutCw0LvRjNGB0LrQuNC5INC60YDQsNC5LCDQp9C40YLQsCwg0YPQu9C40YbQsCDQk9C10L3QtdGA0LDQu9CwINCR0LXQu9C40LrQsCwgNDIiCg3n7OJCFbUxUEI%2C&z=16.53" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+         </div>  
+         <div class="w-[1200px] m-auto">
+             <!-- Поставить по одну линию иконки-->
+             <div class="flex justify-center mt-[20px]">
+                 <a class="">
+                     <img src="Link+BackgroundColor.svg">
+                 </a>
+                 <a class="mx-[20px]">
+                     <img src="2ikonka.svg">
+                 </a>
+                 <a class="">
+                     <img src="3ikonka.svg">
+                 </a>
+             </div>
+             <div class="flex items-center">
+                 <a href="" class="block text-[#000000]">О компании</a>
+                 <a href="" class="block text-[#000000]">Помощь</a>
+                 <a href="" class="block text-[#000000]">Контакты</a>
+             </div>
+             <div class="">
+                 <a href="" class="flex items-center text-[#000000]">© 2025 VR музей</a>
+             </div>
+         </div>
+         
+     </main>
+ </body>
+ </html>
